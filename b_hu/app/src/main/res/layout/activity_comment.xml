@@ -1,0 +1,22 @@
+<androidx.percentlayout.widget.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/issue_perch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="评论区"
+        android:gravity="center"
+        app:layout_heightPercent="5%"
+        app:layout_widthPercent="50%"/>
+    <ListView
+        android:id="@+id/solution_listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/issue_perch"
+        android:layout_alignParentBottom="true"
+        app:layout_widthPercent="100%"/>
+</androidx.percentlayout.widget.PercentRelativeLayout>

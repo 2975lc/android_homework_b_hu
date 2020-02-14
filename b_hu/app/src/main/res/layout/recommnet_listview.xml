@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/recomment_listview_issue_sequence"
+        android:textColor="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"/>
+    <TextView
+        android:id="@+id/recomment_listview_issue_exist"
+        android:textColor="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"/>
+    <TextView
+        android:id="@+id/recomment_listview_issue_quiz"
+        android:textColor="@color/Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/recomment_listview_issue_quizzer"
+        android:maxLines="1"
+        android:textColor="@color/Purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/recomment_listview_quiz_issue_quiz_describe"
+        android:maxLines="2"
+        android:textColor="@color/Gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

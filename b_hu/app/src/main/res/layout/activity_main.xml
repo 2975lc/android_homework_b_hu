@@ -1,0 +1,70 @@
+<androidx.percentlayout.widget.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/first_view_square_b"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:src="@drawable/square_b"
+        app:layout_heightPercent="70%"
+        app:layout_widthPercent="61.8%" />
+
+    <ImageView
+        android:id="@+id/first_view_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@+id/first_view_square_b"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:src="@drawable/circular_frame"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="92.7%" />
+
+    <TextView
+        android:id="@+id/first_view_text"
+        android:background="@android:color/transparent"
+        android:text="有问题，上编乎       "
+        android:textAllCaps="false"
+        android:textSize="75px"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignTop="@+id/first_view_frame"
+        android:layout_alignRight="@+id/first_view_frame"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="76.35%" />
+
+    <ImageView
+        android:id="@+id/first_view_search_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@+id/first_view_frame"
+        android:layout_toLeftOf="@+id/first_view_text"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:src="@drawable/search"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="10%" />
+
+    <ProgressBar
+        android:src="@drawable/search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/first_view_square_b"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="15%" />
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

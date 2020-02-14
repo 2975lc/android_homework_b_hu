@@ -1,0 +1,145 @@
+<androidx.percentlayout.widget.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/home_page_live_icon"
+        android:background="@android:color/transparent"
+        android:src="@drawable/live_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        app:layout_heightPercent="70%"
+        app:layout_widthPercent="10%" />
+
+    <ImageView
+        android:id="@+id/home_page_bookrack_icon"
+        android:src="@drawable/bookrack_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        app:layout_heightPercent="70%"
+        app:layout_widthPercent="10%" />
+
+    <ImageView
+        android:id="@+id/home_page_square_frame"
+        android:background="@android:color/transparent"
+        android:src="@drawable/home_page_square_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        app:layout_heightPercent="70%"
+        app:layout_widthPercent="80%" />
+
+    <TextView
+        android:id="@+id/home_page_search_text"
+        android:background="@android:color/transparent"
+        android:text="编乎搜索"
+        android:textAllCaps="false"
+        android:textSize="75px"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/home_page_bookrack_icon"
+        android:gravity="center|left"
+        app:layout_heightPercent="70%"
+        app:layout_widthPercent="70%" />
+
+    <ImageView
+        android:id="@+id/home_page_serach_icon"
+        android:background="@android:color/transparent"
+        android:src="@drawable/search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/home_page_search_text"
+        android:gravity="center"
+        app:layout_heightPercent="70%"
+        app:layout_widthPercent="7%" />
+
+    <TableLayout
+        android:id="@+id/tabtitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/home_page_square_frame"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="100%">
+
+        <TableRow>
+            <Button
+                android:id="@+id/home_page_title_attention"
+                android:background="@android:color/transparent"
+                android:text="备用"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/home_page_title_recomment"
+                android:background="@android:color/transparent"
+                android:text="推荐"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/home_page_title_host"
+                android:background="@android:color/transparent"
+                android:text="备用"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/home_page_title_nCoV"
+                android:background="@android:color/transparent"
+                android:text="肺炎实况"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+    <ImageView
+        android:id="@+id/bottom_strip_attention"
+        android:src="@drawable/buttom_purple_strip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"/>
+    <ImageView
+        android:id="@+id/bottom_strip_recomment"
+        android:src="@drawable/buttom_purple_strip"
+        android:layout_toRightOf="@+id/bottom_strip_attention"
+        android:layout_alignParentBottom="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"/>
+    <ImageView
+        android:id="@+id/bottom_strip_host"
+        android:src="@drawable/buttom_purple_strip"
+        android:layout_toLeftOf="@+id/bottom_strip_nCoV"
+        android:layout_alignParentBottom="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"/>
+    <ImageView
+        android:id="@+id/bottom_strip_nCoV"
+        android:src="@drawable/buttom_purple_strip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%"/>
+
+</androidx.percentlayout.widget.PercentRelativeLayout>
