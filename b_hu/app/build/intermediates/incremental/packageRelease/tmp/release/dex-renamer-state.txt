@@ -1,4 +1,4 @@
-#Fri Feb 14 22:58:54 CST 2020
-base.0=C\:\\Users\\94976\\Desktop\\b_hu\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+#Sun Feb 16 16:08:41 CST 2020
+base.0=C\:\\Users\\94976\\Desktop\\B_Hu\\b_hu\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

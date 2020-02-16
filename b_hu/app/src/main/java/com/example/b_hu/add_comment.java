@@ -29,6 +29,7 @@ public class add_comment extends AppCompatActivity {
         setContentView(R.layout.activity_add_comment);
         MainActivity.setState(0);
         final SolutionContent get_solution = (SolutionContent) getIntent().getSerializableExtra("add_comment");
+        final String name = (String)getIntent().getSerializableExtra("add_comment_name");
         final EditText Comment = (EditText)findViewById(R.id.add_comment_comment_text);
         final Button submit = (Button)findViewById(R.id.add_comment_submit);
         final ProgressBar progressBar=(ProgressBar)findViewById(R.id.account_add_comment_progress);
@@ -37,7 +38,7 @@ public class add_comment extends AppCompatActivity {
             public void onClick(View v) {
                 String comment=Comment.getText().toString();
                 if (comment.length()>0&&comment.length()<=20000){
-                    String address="http://49.233.136.74:2975/review/"+ MainActivity.getAccount_name() +"/"+comment+"/"+get_solution.getSolution_sequence()+"/"+get_solution.getSolution_floor();
+                    String address="http://49.233.136.74:2975/review/"+name+"/"+comment+"/"+get_solution.getSolution_sequence()+"/"+get_solution.getSolution_floor();
                     sendRequestWithHttpURLconnection(address);
                     progressBar.setVisibility(View.VISIBLE);
                     Handler handler = new Handler();

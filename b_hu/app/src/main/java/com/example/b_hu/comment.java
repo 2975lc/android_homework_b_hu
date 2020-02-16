@@ -40,6 +40,8 @@ public class comment extends AppCompatActivity {
                     Intent intent1 = new Intent(comment.this,add_comment.class);
                     intent1.putExtra("add_comment",get_solution);
                     startActivity(intent1);
+                    intent1.putExtra("add_comment_name",MainActivity.getAccount_name());
+                    startActivity(intent1);
                     //跳转至评论界面
                     Intent intent =new Intent(comment.this,add_comment.class);
                     startActivity(intent);

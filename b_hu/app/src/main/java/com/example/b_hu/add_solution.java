@@ -28,6 +28,7 @@ public class add_solution extends AppCompatActivity {
         setContentView(R.layout.activity_add_solution);
         MainActivity.setState(0);
         final RecommentContent get_issue = (RecommentContent)getIntent().getSerializableExtra("add_solution");
+        final String name = (String)getIntent().getSerializableExtra("add_solution_name");
         final EditText Solution = (EditText)findViewById(R.id.add_solution_solution_text);
         final Button submit = (Button)findViewById(R.id.add_solution_submit);
         final ProgressBar progressBar=(ProgressBar)findViewById(R.id.account_add_solution_progress);
@@ -36,9 +37,8 @@ public class add_solution extends AppCompatActivity {
             public void onClick(View v) {
                 String solution=Solution.getText().toString();
                 if (solution.length()>0&&solution.length()<=20000){
-                    String address="http://49.233.136.74:2975/resolve/"+ MainActivity.getAccount_name() +"/"+solution+"/"+get_issue.getIssue_sequence();
+                    String address="http://49.233.136.74:2975/resolve/"+name+"/"+solution+"/"+get_issue.getIssue_sequence();
                     sendRequestWithHttpURLconnection(address);
-                    Toast.makeText(add_solution.this,address,Toast.LENGTH_LONG).show();
                     progressBar.setVisibility(View.VISIBLE);
                     Handler handler = new Handler();
                     handler.postDelayed(new Runnable() {

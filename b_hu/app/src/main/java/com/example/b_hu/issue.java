@@ -60,6 +60,8 @@ public class issue extends AppCompatActivity {
                     Intent intent1 = new Intent(issue.this,add_solution.class);
                     intent1.putExtra("add_solution",get_issue);
                     startActivity(intent1);
+                    intent1.putExtra("add_solution_name",MainActivity.getAccount_name());
+                    startActivity(intent1);
                     Intent intent =new Intent(issue.this,add_solution.class);
                     startActivity(intent);
                 }else {
